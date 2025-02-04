@@ -1,0 +1,9 @@
+syntax = "proto3";
+message ProductMessage {
+    int32 id = 1;
+    string name = 2;
+    string description = 3;
+    int32 price = 4;
+    int32 quantity = 5;
+    string action = 6;  //This field stores the action (e.g., 'created', 'updated', 'deleted')
+}

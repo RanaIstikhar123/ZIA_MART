@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "order-service"
+version = "0.1.0"
+description = ""
+authors = ["Iftikhar Ali <ranaadeei6442070@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlmodel = "^0.0.21"
+uvicorn = {extras = ["standards"], version = "^0.30.6"}
+psycopg = {extras = ["binary"], version = "^3.2.1"}
+aiokafka = "^0.11.0"
+confluent-kafka = "^2.5.0"
+mypy = "^1.11.1"
+protobuf = "^5.27.3"
+fastapi = "^0.112.2"
+asyncpg = "^0.29.0"
+psycopg2-binary = "^2.9.9"
+psycopg2 = "^2.9.9"
+aiohttp = "^3.10.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

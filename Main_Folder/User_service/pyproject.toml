@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "user-service"
+version = "0.1.0"
+description = ""
+authors = ["Iftikhar Ali <ranaadeei6442070@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlmodel = "^0.0.21"
+uvicorn = {extras = ["standards"], version = "^0.30.6"}
+psycopg = {extras = ["binary"], version = "^3.2.1"}
+aiokafka = "^0.11.0"
+confluent-kafka = "^2.5.0"
+mypy = "^1.11.1"
+protobuf = "^5.27.3"
+fastapi = "^0.112.2"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pyjwt = "^2.9.0"
+python-jose = "^3.3.0"
+sqlalchemy = "^2.0.34"
+python-multipart = "^0.0.9"
+bcrypt = "^4.2.0"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message PaymentMessage {
+    int32 id = 1;
+    int32 order_id = 2;          // ID of the order for which payment is made
+    int32 user_id = 3;           // User who made the payment
+    float total_amount = 4;      // Total payment amount
+    string status = 5;           // Payment status: "paid", "refunded"
+    string timestamp = 6;        // Timestamp for payment
+}
+

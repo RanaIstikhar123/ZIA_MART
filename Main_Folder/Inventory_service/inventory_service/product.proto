@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message ProductMessage {
+    int32 id = 1;                // ID of the product
+    string name = 2;              // Name of the product
+    string description = 3;       // Description of the product
+    int32 price = 4;              // Price of the product
+    int32 quantity = 5;           // Initial stock/quantity of the product
+    string action = 6;            // Action, e.g., "created", "updated", "deleted"
+}
+
